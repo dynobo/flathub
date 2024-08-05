@@ -1,0 +1,42 @@
+app-id: com.github.dynobo.myhumbleself
+runtime: org.gnome.Platform
+runtime-version: 46
+sdk: org.gnome.Sdk
+command: myhumbleself
+finish-args:
+  - --share=ipc
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --device=dri
+  - --device=all
+cleanup:
+  - /sbin
+  - /include
+  - /lib/cmake
+  - /lib/pkgconfig
+  - /bin/protoc
+  - /share/doc
+  - /share/pkgconfig
+  - /share/man
+  - /share/cmake*
+  - "*.a"
+  - "*.la"
+
+modules:
+  - python3-dependencies.json
+  - name: metadata
+    buildsystem: simple
+    build-commands:
+      - install -Dm644 com.github.dynobo.myhumbleself.svg
+        /app/share/icons/hicolor/scalable/apps/com.github.dynobo.myhumbleself.svg
+      - install -Dm644 com.github.dynobo.myhumbleself.desktop
+        /app/share/applications/com.github.dynobo.myhumbleself.desktop
+      - install -Dm644 com.github.dynobo.myhumbleself.appdata.xml
+        /app/share/appdata/com.github.dynobo.myhumbleself.appdata.xml
+    sources:
+      - type: file
+        path: com.github.dynobo.myhumbleself.svg
+      - type: file
+        path: com.github.dynobo.myhumbleself.desktop
+      - type: file
+        path: com.github.dynobo.myhumbleself.appdata.xml

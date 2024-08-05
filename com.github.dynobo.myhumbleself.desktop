@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=MyHumbleSelf
+Name[de]=MyHumbleSelf
+GenericName=Shows webcam image on desktop 
+GenericName[de]=Zeigt das Webcam-Bild auf dem Desktop an
+Comment=Useful tool for presentations or screencasts
+Comment[de]=Nützlich für Bildschirmaufzeichnungen oder Präsentationen
+Exec=myhumbleself
+Icon=com.github.dynobo.myhumbleself
+Terminal=false
+Type=Application
+Categories=Utility;Office;
+Keywords=Webcam;Presentation;

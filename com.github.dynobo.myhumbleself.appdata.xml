@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+    <id>com.github.dynobo.myhumbleself</id>
+    <metadata_license>CC0-1.0</metadata_license>
+    <project_license>GPL-3.0-or-later</project_license>
+    <name>MyHumbleSelf</name>
+    <developer_name>dynobo</developer_name>
+    <summary>Shows webcam image on desktop</summary>
+    <description>
+        <p>Show your webcam image on your desktop for presentations or screencasts.</p>
+        <p>Usage:</p>
+        <ol>
+            <li>Start MyHumbleSelf</li>
+            <li>Resize the window and move it to the desired location</li>
+            <li>Set to "always on top" via your window manager (right click on titlebar)</li>
+            <li>Hover the webcam image and click the "eye"-button in top right to hide window
+                controls</li>
+        </ol>
+        <p>Some notable features:</p>
+        <ul>
+            <li>Use face tracking to keep your head in center</li>
+            <li>Choose among various shape-masks to add some style</li>
+        </ul>
+        <p>Tags: webcam, presentations, screencast</p>
+    </description>
+    <url type="homepage">https://github.com/dynobo/myhumbleself</url>
+    <url type="bugtracker">https://github.com/dynobo/myhumbleself/issues</url>
+    <url type="help">https://github.com/dynobo/myhumbleself/issues</url>
+
+    <screenshots>
+        <screenshot type="default">
+            <image>
+                https://raw.githubusercontent.com/dynobo/myhumbleself/main/resources/screenshot-02.png
+            </image>
+        </screenshot>
+        <screenshot>
+            <image>
+                https://raw.githubusercontent.com/dynobo/myhumbleself/main/resources/screenshot-01.png
+            </image>
+        </screenshot>
+    </screenshots>
+
+    <branding>
+        <color type="primary" scheme_preference="light">#e2e2ec</color>
+        <color type="primary" scheme_preference="dark">#3d3d3f</color>
+    </branding>
+
+    <releases>
+        <release version="0.1.0" type="stable" date="#TODO" />
+    </releases>
+
+    <launchable type="desktop-id">com.github.dynobo.myhumbleself.desktop</launchable>
+    <content_rating type="oars-1.1" />
+</component>
